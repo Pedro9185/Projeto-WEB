@@ -18,8 +18,8 @@ body {
 }
 
 .box-form {
-  width: 60%;
-  height: 70%;
+  width: 70%;
+  height: 60%;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 30px;
   display: flex;
@@ -30,8 +30,9 @@ body {
 
 .form {
   width: 50%;
-  height: 50%;
+  height: 70%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   background-color: #ffff;
 }
@@ -40,12 +41,15 @@ body {
   margin-top: 10px;
   height: 40px;
   border-radius: 5px;
+  border: none;
+  background-color: rgba(224, 225, 221, 1);
 }
 .button-entrar {
   height: 40px;
   cursor: pointer;
   margin-top: 10px;
   border-radius: 5px;
+  border: none;
   background-color: rgba(61, 84, 112, 1);
   color: #ffff;
 }
