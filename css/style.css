@@ -15,21 +15,35 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row-reverse;
 }
 
 .box-form {
-  width: 65%;
+  width: 50%;
   height: 60%;
   background-color: rgba(255, 255, 255, 1);
-  border-radius: 30px;
+  border-radius: 0px 30px 30px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
+.box-info {
+  background-color: rgba(27, 38, 59, 1);
+  padding: 20px;
+  border-radius: 30px 0px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 10%;
+  height: 55%;
+  text-align: center;
+  color: #ffff;
+}
+
 .form {
-  width: 50%;
+  width: 60%;
   height: 70%;
   display: flex;
   justify-content: center;
@@ -44,7 +58,7 @@ body {
   border: none;
   background-color: rgba(224, 225, 221, 1);
 }
-.button-entrar {
+.button {
   height: 40px;
   cursor: pointer;
   margin-top: 10px;
