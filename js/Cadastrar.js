@@ -10,6 +10,20 @@ formulario.addEventListener("submit", (ev) => {
 
   let existe = usuarios.some((v) => v.email === email.value);
 
+  //falta adicionar uma verificação para dizer que a senha não pode ser menos que 6 digitos
+
+  if (senha.value.length < 6) {
+    let feedBack = document.getElementById("feedback");
+
+    feedBack.innerHTML =
+      "<p style = 'color: red; font-size: 12px;' >A senha não pode ser menor que 6 digitos</p>";
+
+    setTimeout(() => {
+      feedBack.innerHTML = "";
+    }, 2000);
+    return;
+  }
+
   if (existe) {
     alert(
       "Esse email já está cadastrado, verifique seu email e tente novamente"
