@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <section class="container">
+        <section class="box-form">
+            <h2>Faça seu Login e bom trabalho</h2>
+            <form action="" class="form" id="formulario">
+                <input type="email" id="email" placeholder="E-mail:" class="inputs" required>
+                <input type="password" id="password" placeholder="Senha:" class="inputs" required>
+                <article class="article-mantenha-me-conectado">
+                    <label>
+                        <input type="checkbox" id="manter-conectado">
+                        <span>mantenha-me conectado</span>
+                    </label>
+                    <a href="#" class="forgot-password">
+                        <p>esqueci minha senha</p>
+                    </a>
+                </article>
+                <span id="feedBackEmail" class="feedback">Email ou Senha incorretos ou não existem</span>
+                <input type="submit" value="Entrar" class="button">
+                <a class="forgot-password mobile-only a-color " href="./SignUp.html">
+                    <p class="p-ir-para-cadastrar">Ainda não tem conta? </p>
+                    Cadastre-se
+                </a>
+
+            </form>
+        </section>
+        <section class="box-info">
+            <h2>Top RH</h2>
+            <p>Bem-Vindo ao melhor sistema de gestão de pessoas!</p>
+            <span>Não tem uma conta? cadastre-se</span>
+            <button class="button-cadastrar-se" onclick=" ir_para_pag_cadastrar()">Cadastrar-se</button>
+        </section>
+    </section>
+
+
+
+
+
+
+    <script src="./js/Login.js"></script>
+</body>
+
+</html>
