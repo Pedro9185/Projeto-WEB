@@ -12,7 +12,13 @@ formulario.addEventListener("submit", (ev) => {
   );
 
   if (!encontrarUsuario) {
-    alert("Email ou Senha incorretos ou não existem");
+    let feedBackEmail = document.getElementById("feedBackEmail");
+
+    feedBackEmail.style.display = "block";
+
+    setTimeout(() => {
+      feedBackEmail.style.display = "none";
+    }, 2000);
   } else {
     armazenar_dados("usuarioLogado", encontrarUsuario);
     window.location = `./Home.html`;
@@ -20,7 +26,7 @@ formulario.addEventListener("submit", (ev) => {
 });
 
 function ir_para_pag_cadastrar() {
-  window.location = "./Cadastrar.html";
+  window.location = "./SignUp.html";
 }
 
 function armazenar_dados(chave, valor) {

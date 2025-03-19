@@ -4,6 +4,7 @@ const formulario = document.getElementById("formulario");
 const nome = document.getElementById("nome");
 const email = document.getElementById("email");
 const senha = document.getElementById("password");
+const repassword = document.getElementById("repassword");
 
 formulario.addEventListener("submit", (ev) => {
   ev.preventDefault();
@@ -15,19 +16,33 @@ formulario.addEventListener("submit", (ev) => {
   if (senha.value.length < 6) {
     let feedBack = document.getElementById("feedback");
 
-    feedBack.innerHTML =
-      "<p style = 'color: red; font-size: 12px;' >A senha não pode ser menor que 6 digitos</p>";
+    feedBack.style.display = "block";
 
     setTimeout(() => {
-      feedBack.innerHTML = "";
+      feedBack.style.display = "none";
+    }, 2000);
+    return;
+  }
+
+  if (senha.value !== repassword.value) {
+    let feedBackRepassword = document.getElementById("feedBackRepassword");
+
+    feedBackRepassword.style.display = "block";
+
+    setTimeout(() => {
+      feedBackRepassword.style.display = "none";
     }, 2000);
     return;
   }
 
   if (existe) {
-    alert(
-      "Esse email já está cadastrado, verifique seu email e tente novamente"
-    );
+    let feedBackEmail = document.getElementById("feedBackEmail");
+
+    feedBackEmail.style.display = "block";
+
+    setTimeout(() => {
+      feedBackEmail.style.display = "none";
+    }, 2000);
 
     return;
   }
@@ -67,5 +82,5 @@ function buscarDados(chave) {
 }
 
 function ir_para_login() {
-  window.location = `./Login.html`;
+  window.location = `./SignIn.html`;
 }
