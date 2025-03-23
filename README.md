@@ -23,6 +23,89 @@ Você pode acessar o site pelo link:
 - Saudação para  o usuário logado baseado na hora do dia
 - Logout
 
+# Contratos de Comunicação - Sistema Top RH
+
+## 1. Contrato para Login
+
+### Requisição
+```json
+{
+  "email": "usuario@exemplo.com",
+  "senha": "senha123"
+}
+```
+
+### Resposta de Sucesso
+```json
+{
+  "status": 200,
+  "mensagem": "Login realizado com sucesso",
+  "dados": {
+    "nome": "Nome do Usuário",
+    "email": "usuario@exemplo.com"
+  }
+}
+```
+
+### Resposta de Erro
+```json
+{
+  "status": 401,
+  "mensagem": "Email ou senha incorretos ou não existem",
+  "erro": "CREDENCIAIS_INVALIDAS"
+}
+```
+
+## 2. Contrato para Cadastro de Usuário
+
+### Requisição
+```json
+{
+  "nome": "Nome Completo",
+  "email": "novousuario@exemplo.com",
+  "senha": "senha123"
+}
+```
+
+### Resposta de Sucesso
+```json
+{
+  "status": 201,
+  "mensagem": "Usuário cadastrado com sucesso",
+  "dados": {
+    "nome": "Nome Completo",
+    "email": "novousuario@exemplo.com"
+  }
+}
+```
+
+### Resposta de Erro (email já cadastrado)
+```json
+{
+  "status": 409,
+  "mensagem": "Esse email já está cadastrado, verifique seu email e tente novamente",
+  "erro": "EMAIL_JA_EXISTE"
+}
+```
+
+### Resposta de Erro (senha inválida)
+```json
+{
+  "status": 400,
+  "mensagem": "A senha não pode ser menor que 6 digitos",
+  "erro": "SENHA_INVALIDA"
+}
+```
+
+### Resposta de Erro (senhas não coincidem)
+```json
+{
+  "status": 400,
+  "mensagem": "As senhas não coincidem",
+  "erro": "SENHAS_DIFERENTES"
+}
+```
+
 ## Desenvolvedores
 [Lucas Araujo](https://github.com/lal28)<br>
 [Pedro Henrique](https://github.com/Pedro9185)<br>
