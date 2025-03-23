@@ -130,7 +130,7 @@ body {
 }
 
 /* Media Query para dispositivos móveis */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
     justify-content: center;
@@ -143,15 +143,15 @@ body {
   }
 
   .box-info {
-    display: none; /* Oculta a seção box-info em dispositivos móveis */
+    display: none;
   }
 
   .form {
-    width: 80%; /* Ajusta a largura do formulário para melhorar a usabilidade */
+    width: 80%;
   }
 
   .button {
-    margin-top: 20px; /* Reduz a margem superior do botão */
+    margin-top: 20px;
   }
 
   .mobile-only {
@@ -167,5 +167,11 @@ body {
   .a-color {
     color: rgba(61, 84, 112, 1);
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .box-form h2 {
+    font-size: 16px;
   }
 }
