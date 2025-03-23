@@ -82,5 +82,5 @@ function buscarDados(chave) {
 }
 
 function ir_para_login() {
-  window.location = `./SignIn.html`;
+  window.location = `./index.html`;
 }
