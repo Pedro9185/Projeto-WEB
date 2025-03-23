@@ -13,7 +13,10 @@ Você pode acessar o site pelo link:
 - Página Dashboard do sistema
 - Página Sobre com informações da equipe
 # Funcionalidades Principais implementadas:
-- Cadastro do usuário salvo para ser utilizado no login e na home utilizando a funcionalidade localStorage
+- Login e Cadastro do usuario salvando dados no localStorage 
+- validação dos campos de login e feedback para o usuario caso ele não esteja cadastrado ou o email ou senha estiverem incorretos
+- validação dos campos de cadastro e feedback para o usuario caso as senhas não sejam iguais ou se já houver um email já cadastrado
+- validação na pag home para não deixar o usuario acessar a pagina home sem ter um usuario logado
 - Responsividade: Adaptações para diferentes tamanhos de telas utilizando media queries:
 	- 1024px,768px,55px,425px,320px
 - Menu de navegação lateral responsível e retrátil para telas menores
