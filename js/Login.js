@@ -6,7 +6,7 @@ formulario.addEventListener("submit", (ev) => {
   ev.preventDefault();
   const email = document.getElementById("email").value;
   const senha = document.getElementById("password").value;
-
+Home
   const encontrarUsuario = usuarios.find(
     (v) => v.email === email && v.senha === senha
   );
@@ -21,7 +21,7 @@ formulario.addEventListener("submit", (ev) => {
     }, 2000);
   } else {
     armazenar_dados("usuarioLogado", encontrarUsuario);
-    window.location = `./home.html`;
+    window.location = `./Home.html`;
   }
 });
 
