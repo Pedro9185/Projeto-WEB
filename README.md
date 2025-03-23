@@ -13,6 +13,7 @@ Você pode acessar o site pelo link:
 - Página Dashboard do sistema
 - Página Sobre com informações da equipe
 # Funcionalidades Principais implementadas:
+- Página Inicial com apresentação do sistema e cards interativos
 - Login e Cadastro do usuario salvando dados no localStorage 
 - validação dos campos de login e feedback para o usuario caso ele não esteja cadastrado ou o email ou senha estiverem incorretos
 - validação dos campos de cadastro e feedback para o usuario caso as senhas não sejam iguais ou se já houver um email já cadastrado
