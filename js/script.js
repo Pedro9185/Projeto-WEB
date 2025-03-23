@@ -50,14 +50,14 @@ function carregarUsuarioLogado() {
     }
   } else {
     // Redirecionar para página de login se não estiver logado
-    window.location = "./index.html";
+    window.location = "./login.html";
   }
 }
 
 //Função para realizar logout
 function realizarLogout() {
   localStorage.removeItem("usuarioLogado");
-  window.location = "./index.html";
+  window.location = "./login.html";
 }
 
 // Carregar dados do usuário quando a página for carregada
