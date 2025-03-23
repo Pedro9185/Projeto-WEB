@@ -19,6 +19,8 @@
   height: 70%;
   text-align: center;
   color: #ffff;
+  box-sizing: border-box;
+  padding: 5px;
 }
 
 .ja-tenho-uma-conta {
@@ -37,7 +39,7 @@
 }
 
 /* Media Query para dispositivos móveis */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
     justify-content: center;

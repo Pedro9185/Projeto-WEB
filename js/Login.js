@@ -6,7 +6,6 @@ formulario.addEventListener("submit", (ev) => {
   ev.preventDefault();
   const email = document.getElementById("email").value;
   const senha = document.getElementById("password").value;
-
   const encontrarUsuario = usuarios.find(
     (v) => v.email === email && v.senha === senha
   );
