@@ -65,7 +65,7 @@ body {
 .conteudo {
     background-color: #E0E1DD;
     margin-bottom: 24px;
-    padding: 20px;
+    padding: 20px 50px 0px 80px;
     width: 100%;
 }
 
@@ -134,10 +134,10 @@ body {
 
 .conteudo-motivos, .conteudo-funcoes {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    gap: 20px;
+    gap: 40px;
     margin-top: 40px;
     padding: 20px 10px;
 }
