@@ -29,11 +29,11 @@ function menuToggle() {
 
 // Função para carregar os dados do usuário logado
 function carregarUsuarioLogado() {
-  const usuarioLogado = localStorage.getItem("usuarioLogado");
+  const dadosUsuarioJSON = localStorage.getItem("usuarioLogado");
 
-  if (usuarioLogado) {
+  if (dadosUsuarioJSON) {
     try {
-      const usuario = JSON.parse(usuarioLogado);
+      const usuario = JSON.parse(dadosUsuarioJSON);
 
       // Atualizar o nome do usuário na saudação
       document.querySelector(
