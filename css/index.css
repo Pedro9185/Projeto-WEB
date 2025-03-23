@@ -66,23 +66,27 @@ body {
     background-color: #E0E1DD;
     margin-bottom: 24px;
     padding: 20px;
+    width: 100%;
 }
 
 .conteudo-principal {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     gap: 30px;
     padding-bottom: 20px;
+
 }
 
 .conteudo-principal-escrito {
     display: flex;
+    flex: 1;
+    min-width: 300px;
     flex-direction: column;
     justify-content: space-around;
     gap: 30px;
-    max-width: 600px;
+    width: 100%;
 }
 
 .conteudo-principal-escrito-titulo {
@@ -130,7 +134,7 @@ body {
 
 .conteudo-motivos, .conteudo-funcoes {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
     gap: 20px;
@@ -244,7 +248,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: clamp(14px, 2vw, 16px);
-    text-align: left;
+    text-align: center;
     width: 100%;
     max-width: 800px;
 }
@@ -295,6 +299,7 @@ body {
     
     .conteudo-principal-escrito {
         align-items: center;
+        min-width:100%;
     }
     
     .flip-card {

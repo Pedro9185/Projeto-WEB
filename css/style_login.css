@@ -15,6 +15,7 @@ h1 {
 
 h2 {
   font-size: 30px;
+  color: #1B263B;
 }
 
 h3 {
@@ -62,12 +63,18 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   width: 15%;
   height: 70%;
   text-align: center;
   color: #ffff;
   box-sizing: border-box;
   padding: 5px;
+}
+
+.box-info img{
+  width: 100px;
+
 }
 
 .box-info span {
@@ -107,6 +114,7 @@ p {
 
 .button-cadastrar-se {
   height: 40px;
+  padding: 5px;
   cursor: pointer;
   margin-top: 10px;
   font-size: medium;
