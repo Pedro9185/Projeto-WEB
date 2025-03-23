@@ -41,7 +41,7 @@ function carregarUsuarioLogado() {
             // Atualizar o nome no menu do usuário
             const userMenuName = document.querySelector("#userMenu h3");
             if (userMenuName) {
-                userMenuName.innerHTML = `${usuario.nome}<br /><span>Usuário</span>`;
+                userMenuName.innerHTML = `${usuario.nome}<br /><span>Admin</span>`;
             }
             
         } catch (e) {
