@@ -21,7 +21,7 @@ formulario.addEventListener("submit", (ev) => {
     }, 2000);
   } else {
     armazenar_dados("usuarioLogado", encontrarUsuario);
-    window.location = `./Home.html`;
+    window.location = `./home.html`;
   }
 });
 
