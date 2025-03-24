@@ -327,6 +327,7 @@ aside {
   border-radius: 5px;
   margin-top: 5px;
   padding: 5px 0px 5px 0px;
+  font-size: 16px;
 }
 
 .navegation div:hover {
